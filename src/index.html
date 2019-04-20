@@ -10,5 +10,14 @@
 </head>
 <body>
   <app-root></app-root>
+  <ng-button label="Angular Custom Element"></ng-button>
+
+  <script>
+    const el = document.querySelector('ng-button');
+    el.addEventListener('action', e => {
+      console.log('Angular Button Cliked - ' + e.type + ' - ' + e.detail );
+    });
+  </script>
+  
 </body>
 </html>
